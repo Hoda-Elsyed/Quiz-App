@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'); 
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, white, #88abf3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    padding: 1.5rem 0 0;
+    width: 400px;
+    max-width: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    text-align: center;
+    overflow: hidden;
+}
+/* .question{
+} */
+.choices{
+   text-align: start;
+   margin: 2rem;
+   margin-left: 0;
+   list-style: none;
+
+}
+@media (max-width: 400px) {
+    .container{
+        width: 300px;
+        padding:  1rem 0 0;
+    }
+    .choices{
+        margin: 2rem 0;
+        text-align: center;
+    }
+}
+.choices li{
+    margin: 0.7rem 0;
+    display: flex;
+    align-items: center;
+}
+.submit{
+    width: 100%;
+    padding: 1.1rem;
+    border: 0;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #5f54a4;
+    transition: 0.3s;
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+.submit:hover{
+    background-color: rgb(65, 58, 113);
+
+}
+.answer{
+    padding: 0;
+    margin: 0;
+}
+label{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+    margin-right: 0.5rem;
+    
+}
